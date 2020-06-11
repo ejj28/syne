@@ -1,0 +1,16 @@
+{
+  "name": "syne",
+  "version": "1.0.0",
+  "description": "An overly ambitious music player/manager project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "ejj28",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^9.0.3",
+    "jquery": "^3.5.1"
+  }
+}
