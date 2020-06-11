@@ -8,6 +8,8 @@ var isPlaying = false;
 
 $('#playpause').click(() => {
     console.log("click")
+    console.log(sound.duration())
+    console.log(sound.seek())
     if (!isPlaying) {
         sound.play();
         isPlaying = true;
