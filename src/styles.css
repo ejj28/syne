@@ -106,5 +106,23 @@ body {
 
   .seek-bar {
       width: 300px;
+      margin-right: 5px;
+  }
+
+  #controlBarAlbumArt {
+    height: 75px;
+    padding: 5px;
   }
   
+  #controlBarTitle {
+    color: #fff;
+  }
+
+  #controlBarArtist {
+    color: #fff;
+  }
+
+  #controlBarTrackInfoText {
+    margin-left: 5px;
+    margin-top: 5px;
+  }
