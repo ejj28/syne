@@ -1,2 +1,2 @@
 # syne
- An overly ambitious music player/manager project
+ A music manager and player
