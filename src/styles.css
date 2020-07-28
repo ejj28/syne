@@ -99,10 +99,7 @@ body {
     box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
   }
 
-  .playback-div {
-    background-color: #333;
-    height: 75px
-  }
+ 
 
   .seek-bar {
       width: 300px;
@@ -110,7 +107,7 @@ body {
   }
 
   #controlBarAlbumArt {
-    height: 75px;
+    height: 60px;
     padding: 5px;
   }
   
@@ -124,5 +121,14 @@ body {
 
   #controlBarTrackInfoText {
     margin-left: 5px;
-    margin-top: 5px;
+	margin-top: 5px;
+	width: 100%;
   }
+
+  #playback-div {
+	background-color: #333;
+    height: 75px;
+	display: grid;
+	grid-template-columns: 2fr 1fr 2fr;
+  }
+

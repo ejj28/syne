@@ -74,20 +74,22 @@
                     </div>
                 </nav>
 
-                <div class="fixed-bottom playback-div d-flex align-items-center justify-content-between">
+                <div class="fixed-bottom align-items-center" id="playback-div">
                     <div id="controlBarTrackInfo" class="d-flex justify-content-start">
                         <img id="controlBarAlbumArt" src="#"/>
                         <div id="controlBarTrackInfoText">
-                            <h4 id="controlBarTitle"></h4>
-                            <h5 id="controlBarArtist"></h5>
+                            <h5 id="controlBarTitle"></h4>
+                            <h6 id="controlBarArtist"></h5>
                         </div>
                     </div>
-                    <div>
-                        <button type="button" class="btn btn-light"><i class="fas fa-fw fa-step-backward"></i></button>
-                        <button type="button" class="btn btn-light" id="playpause"><i class="fas fa-fw fa-play"></i></button>
-                        <button type="button" class="btn btn-light"><i class="fas fa-fw fa-step-forward"></i></button>
+                    <div class="d-flex justify-content-center">
+						<div>
+							<button type="button" class="btn btn-light"><i class="fas fa-fw fa-step-backward"></i></button>
+							<button type="button" class="btn btn-light" id="playpause"><i class="fas fa-fw fa-play"></i></button>
+							<button type="button" class="btn btn-light"><i class="fas fa-fw fa-step-forward"></i></button>
+						</div>
                     </div>
-                    <div id="slidecontainer">
+                    <div id="slidecontainer" class="d-flex justify-content-end">
                         <input type="range" min="0" max="100" value="0" class="slider seek-bar" id="seekBar">
                       </div>
                 </div>
