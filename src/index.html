@@ -35,7 +35,7 @@
 
         <div class="container-fluid">
             <div class="row">
-                <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <nav class="col-md-2 d-none d-md-inline bg-light sidebar">
                     <div class="sidebar-sticky">
                         <ul class="nav flex-column">
                             <li class="nav-item">
@@ -63,44 +63,81 @@
                     </div>
                 </nav>
 
-                <div class="fixed-bottom align-items-center" id="playback-div">
-                    <div id="controlBarTrackInfo" class="d-flex justify-content-start playback-unit align-items-center">
-                        <img id="controlBarAlbumArt" src="#" />
-                        <div id="controlBarTrackInfoText">
-                            <h4 id="controlBarTitle"></h4>
-                            <h5 id="controlBarArtist"></h5>
-                        </div>
-                    </div>
-                    <div class="d-flex playback-unit align-items-center">
-                        <div>
-                            <div class="d-flex justify-content-center">
-                                <a aria-role="button" class="btn btn-light playback-button"><i class="fas fa-fw fa-step-backward" style="color:#FFFFFF;"></i></a>
-                                <a aria-role="button" class="btn btn-light playback-button" id="playpause"><i id="playpause-icon" class="fas fa-fw fa-play" style="color:#FFFFFF;"></i></a>
-                                <a aria-role="button" class="btn btn-light playback-button"><i class="fas fa-fw fa-step-forward" style="color:#FFFFFF;"></i></a>
-                            </div>
-                            <div id="slidecontainer" class="d-flex justify-content-center">
-                                <input type="range" min="0" max="100" value="0" class="slider seek-bar" id="seekBar">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="playback-unit">
-
-                    </div>
-
+                <div id="main-content" role="main" class="main offset-md-2 col-md-10 d-md-inline">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Second</th>
+                                <th scope="col">Third</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
+            </div>
+        </div>
+        <div class="fixed-bottom align-items-center" id="playback-div">
+            <div id="controlBarTrackInfo" class="d-flex justify-content-start playback-unit align-items-center">
+                <img id="controlBarAlbumArt" src="#" />
+                <div id="controlBarTrackInfoText">
+                    <h4 id="controlBarTitle"></h4>
+                    <h5 id="controlBarArtist"></h5>
+                </div>
+            </div>
+            <div class="d-flex playback-unit align-items-center">
+                <div>
+                    <div class="d-flex justify-content-center">
+                        <a aria-role="button" class="btn btn-light playback-button"><i
+                                    class="fas fa-fw fa-step-backward" style="color:#FFFFFF;"></i></a>
+                        <a aria-role="button" class="btn btn-light playback-button" id="playpause"><i
+                                    id="playpause-icon" class="fas fa-fw fa-play" style="color:#FFFFFF;"></i></a>
+                        <a aria-role="button" class="btn btn-light playback-button"><i
+                                    class="fas fa-fw fa-step-forward" style="color:#FFFFFF;"></i></a>
+                    </div>
+                    <div id="slidecontainer" class="d-flex justify-content-center">
+                        <input type="range" min="0" max="100" value="0" class="slider seek-bar" id="seekBar">
+                    </div>
+                </div>
+            </div>
+            <div class="playback-unit">
 
             </div>
 
-            <script>
-                window.$ = window.jQuery = require('jquery');
-            </script>
-            <script src="ui-kit/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        </div>
 
-            <script src="playback.js"></script>
 
-            <!-- Core plugin JavaScript-->
-            <script src="ui-kit/vendor/jquery/jquery-3.5.1.min.js"></script>
-            <script src="ui-kit/vendor/scripts/bootstrap-slider.js"></script>
+
+        <script>
+            window.$ = window.jQuery = require('jquery');
+        </script>
+        <script src="ui-kit/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <script src="playback.js"></script>
+
+        <!-- Core plugin JavaScript-->
+        <script src="ui-kit/vendor/jquery/jquery-3.5.1.min.js"></script>
+        <script src="ui-kit/vendor/scripts/bootstrap-slider.js"></script>
 </body>
 
 </html>
