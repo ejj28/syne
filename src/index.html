@@ -78,18 +78,24 @@
                     <div id="controlBarTrackInfo" class="d-flex justify-content-start">
                         <img id="controlBarAlbumArt" src="#"/>
                         <div id="controlBarTrackInfoText">
-                            <h5 id="controlBarTitle"></h4>
-                            <h6 id="controlBarArtist"></h5>
+                            <h4 id="controlBarTitle"></h4>
+                            <h5 id="controlBarArtist"></h5>
                         </div>
                     </div>
                     <div>
-                        <a aria-role="button" class="btn btn-light playback-button"><i class="fas fa-fw fa-step-backward" style="color:#FFFFFF;"></i></a>
-                        <a aria-role="button" class="btn btn-light playback-button" id="playpause"><i class="fas fa-fw fa-play" style="color:#FFFFFF;"></i></a>
-                        <a aria-role="button" class="btn btn-light playback-button"><i class="fas fa-fw fa-step-forward" style="color:#FFFFFF;"></i></a>
+                        <div class="d-flex justify-content-center">
+                            <a aria-role="button" class="btn btn-light playback-button"><i class="fas fa-fw fa-step-backward" style="color:#FFFFFF;"></i></a>
+                            <a aria-role="button" class="btn btn-light playback-button" id="playpause"><i class="fas fa-fw fa-play" style="color:#FFFFFF;"></i></a>
+                            <a aria-role="button" class="btn btn-light playback-button"><i class="fas fa-fw fa-step-forward" style="color:#FFFFFF;"></i></a>
+                        </div>
+                        <div id="slidecontainer" class="d-flex justify-content-center">
+                            <input type="range" min="0" max="100" value="0" class="slider seek-bar" id="seekBar">
+                        </div>
                     </div>
-                    <div id="slidecontainer" class="d-flex justify-content-end">
-                        <input type="range" min="0" max="100" value="0" class="slider seek-bar" id="seekBar">
-                      </div>
+                    <div>
+
+                    </div>
+                    
                 </div>
 
             </div>
