@@ -12,6 +12,7 @@
   "dependencies": {
     "@types/howler": "^2.2.0",
     "electron": "^9.0.3",
+    "glob": "^7.1.6",
     "howler": "^2.2.0",
     "jquery": "^3.5.1",
     "music-metadata": "^7.0.0"

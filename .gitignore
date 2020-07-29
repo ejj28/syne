@@ -2,9 +2,9 @@
 # Created by https://www.gitignore.io/api/linux,macos,python,windows,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=linux,macos,python,windows,visualstudiocode
 
-### mididrumhero files ###
+### Syne test files ###
 
-config.json
+music/
 
 ### Linux ###
 *~
