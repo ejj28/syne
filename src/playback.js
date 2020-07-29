@@ -39,6 +39,11 @@ $('#playpause').click(() => {
     }
 });
 
+$('#previousbtn').click(() => {
+    //TODO: if there is a track before this one (album, compilation or playlist) and the track < 5secs, go to track before this
+    sound.seek(0);
+});
+
 /*setInterval(() => {
     updateBar();
 }, 250);

@@ -64,13 +64,14 @@
                 </nav>
 
                 <div id="main-content" role="main" class="main offset-md-2 col-md-10 d-md-inline">
-                    <table class="table">
+                    <table class="table table-hover">
                         <thead>
                             <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Second</th>
-                                <th scope="col">Third</th>
+                                <th scope="col">Song</th>
+                                <th scope="col">Artist</th>
+                                <th scope="col">Album</th>
+                                <th scope="col">Genre</th>
+                                <th scope="col">Released</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -79,18 +80,21 @@
                                 <td>1</td>
                                 <td>2</td>
                                 <td>3</td>
+                                <td>4</td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
                                 <td>1</td>
                                 <td>2</td>
                                 <td>3</td>
+                                <td>4</td>
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
                                 <td>1</td>
                                 <td>2</td>
                                 <td>3</td>
+                                <td>4</td>
                             </tr>
                         </tbody>
                     </table>
@@ -108,11 +112,11 @@
             <div class="d-flex playback-unit align-items-center">
                 <div>
                     <div class="d-flex justify-content-center">
-                        <a aria-role="button" class="btn btn-light playback-button"><i
+                        <a aria-role="button" class="btn btn-light playback-button" id="previousbtn"><i
                                     class="fas fa-fw fa-step-backward" style="color:#FFFFFF;"></i></a>
                         <a aria-role="button" class="btn btn-light playback-button" id="playpause"><i
                                     id="playpause-icon" class="fas fa-fw fa-play" style="color:#FFFFFF;"></i></a>
-                        <a aria-role="button" class="btn btn-light playback-button"><i
+                        <a aria-role="button" class="btn btn-light playback-button"  id="nextbtn"><i
                                     class="fas fa-fw fa-step-forward" style="color:#FFFFFF;"></i></a>
                     </div>
                     <div id="slidecontainer" class="d-flex justify-content-center">
