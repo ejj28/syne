@@ -2,9 +2,15 @@ var howler = require('howler');
 const mm = require('music-metadata');
 const util = require('util');
 
+//renderer.js
+const ipc = require('electron').ipcRenderer;
+
+
+
 var sound;
 
 function setTrack(track) {
+    
     if (isPlaying == true) {
         sound.stop()
     } else {
@@ -16,6 +22,7 @@ function setTrack(track) {
         $("#controlBarAlbumArt").attr("src", `data:${metadata.common.picture[0].format};base64,${metadata.common.picture[0].data.toString('base64')}`);
         $("#controlBarTitle").text(metadata.common.title)
         $("#controlBarArtist").text(metadata.common.artist)
+        ipc.send('updateTrack', [metadata.common.title, metadata.common.artist])
     })
     .catch(err => {
         console.error(err.message);
