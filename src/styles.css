@@ -160,3 +160,8 @@ body {
     padding: 10px;
     height: 100%;
 }
+
+.listAlbumArt {
+    height: 50px;
+    margin-right: 20px;
+}

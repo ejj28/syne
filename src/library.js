@@ -4,7 +4,7 @@ const mm2 = require('music-metadata');
 let pathsDB = {};
 idCount = 0;
 
-const libraryPath = "C:/music"
+const libraryPath = "Z:/Vault/Music"
 
 function addMusic(folder) {
     glob(folder + "/**/*.{flac, mp3}", function (er, files) {
@@ -22,11 +22,11 @@ function populateList() {
             .then(metadata => {
                 $("#songsTable tbody").append(
                     "<tr>" +
-                    "<th scope='row'>" + metadata.common.title + "</th>" +
-                    "<td>" + metadata.common.artist + "</td>" +
-                    "<td>" + metadata.common.album + "</td>" +
-                    "<td>" + metadata.common.genre + "</td>" +
-                    "<td>" + metadata.common.year + "</td>" +
+                    "<th scope='row'>" + "<img class=\"listAlbumArt\" src=data:" + metadata.common.picture[0].format + ";base64," + metadata.common.picture[0].data.toString('base64') + ">" + metadata.common.title + "</th>" +
+                    "<td class=\"align-middle\">" + metadata.common.artist + "</td>" +
+                    "<td class=\"align-middle\">" + metadata.common.album + "</td>" +
+                    "<td class=\"align-middle\">" + metadata.common.genre + "</td>" +
+                    "<td class=\"align-middle\">" + metadata.common.year + "</td>" +
                     "<input type=\"hidden\" value=\"" + key + "\" />" +
                     "</tr>"
                 );
