@@ -4,10 +4,16 @@ const mm2 = require('music-metadata');
 let pathsDB = {};
 idCount = 0;
 
-const libraryPath = "Z:/Vault/Music"
+
+
+function loadFromBar() {
+    addMusic($("#pathBar").val())
+}
 
 function addMusic(folder) {
     glob(folder + "/**/*.{flac, mp3}", function (er, files) {
+        idCount = 0;
+        pathsDB = {};
         for (x of files) {
             pathsDB[idCount] = x;
             idCount++;
@@ -17,9 +23,11 @@ function addMusic(folder) {
 }
 
 function populateList() {
+    $("#songsTable tbody").empty();
     for (const key in pathsDB) {
         mm2.parseFile(pathsDB[key])
             .then(metadata => {
+                
                 $("#songsTable tbody").append(
                     "<tr>" +
                     "<th scope='row'>" + "<img class=\"listAlbumArt\" src=data:" + metadata.common.picture[0].format + ";base64," + metadata.common.picture[0].data.toString('base64') + ">" + metadata.common.title + "</th>" +
@@ -46,4 +54,4 @@ $("#songsTable").on("click", "tbody tr", function () {
 })
 
 
-addMusic(libraryPath);
+
